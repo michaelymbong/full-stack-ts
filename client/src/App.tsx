@@ -1,3 +1,5 @@
+import { gql } from '@apollo/client';
+import { useGetCurrentUserQuery } from './generated/graphql';
 import { isDefined } from '@full-stack-ts/shared';
 import * as React from 'react';
 import Header from './Header';
@@ -41,24 +43,38 @@ const TRENDS = [
   },
 ];
 
-const SUGGESTIONS = [
-  {
-    name: 'TypeScript Project',
-    handle: 'TypeScript',
-    avatarUrl: 'http://localhost:3000/static/ts-logo.png',
-    reason: 'Because you follow @MichaelLNorth',
-  },
-];
+export const GET_CURRENT_USER = gql`
+  query GetCurrentUser {
+    currentUser {
+      id
+      name
+      handle
+      avatarUrl
+      createdAt
+    }
+    suggestions {
+      name
+      handle
+      avatarUrl
+      reason
+    }
+  }
+`;
 
 const App: React.FC = () => {
   const { favorites: rawFavorites } = CURRENT_USER;
   const favorites = (rawFavorites || [])
     .map((f) => f.tweet?.id)
     .filter(isDefined);
+  const { loading, error, data } = useGetCurrentUserQuery();
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (!data) return <p>No data.</p>;
+  const { currentUser, suggestions = [] } = data;
 
   return (
     <div>
-      <LeftSidebar currentUser={CURRENT_USER} />
+      <LeftSidebar currentUser={{ ...CURRENT_USER, ...currentUser }} />
       <Header currentUser={CURRENT_USER} />
 
       <div id="container" className="wrapper nav-closed">
@@ -66,7 +82,7 @@ const App: React.FC = () => {
           currentUserId={CURRENT_USER.id}
           currentUserFavorites={favorites}
         />
-        <RightBar trends={TRENDS} suggestions={SUGGESTIONS} />
+        <RightBar trends={TRENDS} suggestions={suggestions} />
       </div>
     </div>
   );
