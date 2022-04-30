@@ -34,6 +34,34 @@
       "createdAt": "2022-03-23T03:55:59.614Z",
       "updatedAt": "2022-03-23T03:55:59.614Z",
       "id": "tweet-1220baa2-2092-4ed8-a72c-91757dc508f7"
+    },
+    {
+      "message": "first tweet - hello world",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-04-30T14:27:02.172Z",
+      "updatedAt": "2022-04-30T14:27:02.172Z",
+      "id": "tweet-5d6610a0-5ccb-4b33-9764-380f6824efd9"
+    },
+    {
+      "message": "2nd tweet - hello world",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-04-30T14:27:49.295Z",
+      "updatedAt": "2022-04-30T14:27:49.295Z",
+      "id": "tweet-7d8b1a15-338c-4af3-8df7-bb401ec1f26d"
+    },
+    {
+      "message": "3rd tweet - hello world",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-04-30T14:28:20.555Z",
+      "updatedAt": "2022-04-30T14:28:20.555Z",
+      "id": "tweet-f329c996-01ee-4767-9cc0-a2060bb083db"
+    },
+    {
+      "message": "4th tweet - hello world - there should be an author",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-04-30T14:34:25.665Z",
+      "updatedAt": "2022-04-30T14:34:25.665Z",
+      "id": "tweet-ff4bdbac-4deb-4e02-b33d-2f877eca6119"
     }
   ],
   "users": [

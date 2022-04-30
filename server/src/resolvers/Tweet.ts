@@ -16,8 +16,8 @@ const tweetTwitterResolver: TweetResolvers<TwitterResolverContext> = {
   },
   stats(tweet, _, { dbTweetToFavoriteCountMap }) {
     return {
-      commentCount: 99,
-      retweetCount: 1,
+      commentCount: 99, // temp data
+      retweetCount: 1, // temp data
       favoriteCount: dbTweetToFavoriteCountMap[tweet.id] || 0,
     };
   },

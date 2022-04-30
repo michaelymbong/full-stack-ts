@@ -5,6 +5,8 @@ import { tweetTransform } from '../transforms';
 const queryTwitterResolvers: QueryResolvers<TwitterResolverContext> = {
   currentUser: (_, __, { db }) => {
     const [firstUser] = db.getAllUsers();
+
+    console.log('queryTwitterResolvers currentUser');
     if (!firstUser)
       throw new Error(
         'currentUser was requested, but there are no users in the database'
