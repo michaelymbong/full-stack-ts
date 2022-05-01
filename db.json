@@ -76,6 +76,13 @@
       "createdAt": "2022-05-01T06:04:58.430Z",
       "updatedAt": "2022-05-01T06:04:58.430Z",
       "id": "tweet-27eba0ee-81ac-4fef-9eac-5060c1794649"
+    },
+    {
+      "message": "retrieve user",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-05-01T06:09:56.325Z",
+      "updatedAt": "2022-05-01T06:09:56.325Z",
+      "id": "tweet-4883f508-2211-4fd7-8e49-505b3f9c1176"
     }
   ],
   "users": [
