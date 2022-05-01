@@ -62,6 +62,20 @@
       "createdAt": "2022-04-30T14:34:25.665Z",
       "updatedAt": "2022-04-30T14:34:25.665Z",
       "id": "tweet-ff4bdbac-4deb-4e02-b33d-2f877eca6119"
+    },
+    {
+      "message": "1st tweet from the UI",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-05-01T06:03:34.914Z",
+      "updatedAt": "2022-05-01T06:03:34.914Z",
+      "id": "tweet-198296e8-ea89-408b-81a5-65a4a006fc4e"
+    },
+    {
+      "message": "2nd UI tweet\n",
+      "userId": "user-15a37948-7712-4e0b-a554-2fef33f31697",
+      "createdAt": "2022-05-01T06:04:58.430Z",
+      "updatedAt": "2022-05-01T06:04:58.430Z",
+      "id": "tweet-27eba0ee-81ac-4fef-9eac-5060c1794649"
     }
   ],
   "users": [
@@ -186,28 +200,19 @@
   ],
   "topicTrends": [
     {
-      "topic": "Frontend Masters",
-      "tweetCount": 12345,
-      "kind": "topic",
-      "id": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e"
-    },
-    {
       "topic": "Pointless Suggestions",
       "tweetCount": 999,
       "kind": "topic",
       "id": "topictrend-73f3c816-b1fc-456d-8c45-beb9c657a663"
-    }
-  ],
-  "topicTrendQuotes": [
+    },
     {
       "topic": "Frontend Masters",
       "tweetCount": 12345,
-      "title": "Frontend Masters",
-      "description": "Launch of new full stack TS course",
-      "imageUrl": "http://localhost:3000/static/fem_logo.png",
-      "topicTrendId": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e",
-      "id": "topictrendquote-43d669bc-885b-4012-a4e6-653e38a6c521"
-    },
+      "kind": "topic",
+      "id": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e"
+    }
+  ],
+  "topicTrendQuotes": [
     {
       "topic": "Pointless Suggestions",
       "tweetCount": 999,
@@ -216,6 +221,15 @@
       "imageUrl": "http://localhost:3000/static/clippy-logo.jpeg",
       "topicTrendId": "topictrend-73f3c816-b1fc-456d-8c45-beb9c657a663",
       "id": "topictrendquote-d0e1ba0a-fa05-400a-9b94-7403b82ab0f4"
+    },
+    {
+      "topic": "Frontend Masters",
+      "tweetCount": 12345,
+      "title": "Frontend Masters",
+      "description": "Launch of new full stack TS course",
+      "imageUrl": "http://localhost:3000/static/fem_logo.png",
+      "topicTrendId": "topictrend-4f992d65-e229-48f2-b523-2faba1343f3e",
+      "id": "topictrendquote-43d669bc-885b-4012-a4e6-653e38a6c521"
     }
   ],
   "suggestions": [
